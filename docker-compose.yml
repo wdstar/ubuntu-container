@@ -1,0 +1,14 @@
+version: '2'
+services:
+  ubuntu-system: 
+    container_name: ubuntu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    command: /sbin/init
+    ports:
+      - "127.0.0.1:2222:22"
+    volumes:
+      - "./home:/home"
+
