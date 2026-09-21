@@ -1,4 +1,3 @@
-version: '2'
 services:
   ubuntu-system: 
     container_name: ubuntu
